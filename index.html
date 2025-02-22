@@ -1775,27 +1775,7 @@
             </script>
             </body>
             </html>
-<script>
-    function animateCounter(element, target) {
-        let count = 0;
-        let speed = target / 100; // Adjust speed dynamically
-        let interval = setInterval(() => {
-            count += Math.ceil(speed);
-            if (count >= target) {
-                count = target;
-                clearInterval(interval);
-                element.innerText = target + "+"; // Show 700+
-            } else {
-                element.innerText = count;
-            }
-        }, 30);
-    }
 
-    document.addEventListener("DOMContentLoaded", () => {
-        const counter = document.querySelector(".counter-value");
-        animateCounter(counter, 700);
-    });
-</script>
 <script>
     // Intersection Observer for scroll animations
     const observerOptions = {
